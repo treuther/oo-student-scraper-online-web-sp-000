@@ -1,15 +1,45 @@
 require 'open-uri'
 require 'pry'
 
+#Twitter, linkedin, github, blog, profile_quote, and bio
 class Scraper
 
+#Responsible for scraping the index page that lists all of the students
+
+#Takes in URL as argument
+#Uses Nokogiri + Open-URI to access page
+#Return value should be an array of hashes - ea hash represents a single student
+#keys should be :name, :location and :profile_url
   def self.scrape_index_page(index_url)
-    
+    students = []
+    html = open (index_url)
+    index = Nokogiri::HTML(html)
+    index.css(".student-text-card"). each do |student|
+      student_details = {}
+      student_details[:name] = student.css("h4.student-name").text
+      student_details[:location] = student.css("p.student-location").text
+      profile_path = student.css("a").attribute("href").value
+      student_details[:profile_url] = '.fixtures/student-site/' + profile_path
+      students << student_details
+    end
+      students
   end
 
+#Responsible for scraping an indiviual student's profile page to get student info
+#Takes in a student's profile URL
+#Uses Nokogiri + Open-URI to access page
+#Return value should be a hash with key/value pairs that describe an indivual student
+#Some students have twitter while others don't
   def self.scrape_profile_page(profile_url)
-    
+
+
+
   end
 
 end
 
+#index.css(".student-text-card").first
+#index.css("h4.student-name").first.text
+#index.css("p.student-location").first.text
+#index.css("a").attribute("href").value
+#'.fixtures/student-site/'
