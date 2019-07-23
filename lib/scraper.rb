@@ -37,6 +37,10 @@ class Scraper
     profile = Nokogiri::HTML(html)
 binding.pry
     #social
+    profile.css(".social-icon-container").each do |social|
+      if
+
+      end
 
   end
 
