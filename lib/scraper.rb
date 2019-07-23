@@ -34,6 +34,9 @@ class Scraper
     student_profile = {}
     html = open (profile_url)
     profile = Nokogiri::HTML(html)
+
+    #social
+    
   end
 
 end
@@ -43,3 +46,5 @@ end
 #index.css("p.student-location").first.text
 #index.css("a").attribute("href").value
 #'.fixtures/student-site/'
+
+#
