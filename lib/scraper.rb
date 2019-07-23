@@ -31,7 +31,7 @@ class Scraper
 #Return value should be a hash with key/value pairs that describe an indivual student
 #Some students have twitter while others don't
   def self.scrape_profile_page(profile_url)
-    student = {}
+    student_profile = {}
 
 
 
