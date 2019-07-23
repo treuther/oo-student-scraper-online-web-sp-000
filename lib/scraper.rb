@@ -32,8 +32,8 @@ class Scraper
 #Some students have twitter while others don't
   def self.scrape_profile_page(profile_url)
     student_profile = {}
-    html = open (index_url)
-    index = Nokogiri::HTML(html)
+    html = open (profile_url)
+    profile = Nokogiri::HTML(html)
 
 
   end
