@@ -48,7 +48,7 @@ binding.pry
         student_profile[:blog] = social.attribute("href").value
       end
     end
-    
+
 
   end
 
@@ -67,4 +67,3 @@ end
 #Blog:
 #Profile quote:
 #Bio:
-
