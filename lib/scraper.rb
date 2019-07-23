@@ -38,7 +38,7 @@ class Scraper
 binding.pry
     #social
     profile.css(".social-icon-container").each do |social|
-      if social.attribute
+      if social.attribute("a")
 
       end
 
