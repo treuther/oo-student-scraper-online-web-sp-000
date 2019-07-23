@@ -39,6 +39,7 @@ binding.pry
     #social
     profile.css(".social-icon-container").each do |social|
       if social.attribute("href").value.include?("twitter")
+        student_profile[:twitter] = social.attribute("href").value
 
       end
 
