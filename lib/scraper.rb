@@ -49,7 +49,7 @@ end
 #'.fixtures/student-site/'
 
 #Social container: profile.css(".social-icon-container").first
-#Twitter: 
+#Twitter:
 #Linkedin:
 #gitHub:
 #Blog:
