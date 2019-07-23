@@ -61,9 +61,5 @@ end
 #'.fixtures/student-site/'
 
 #Social container: profile.css(".social-icon-container").first
-#Twitter:
-#Linkedin:
-#gitHub:
-#Blog:
 #Profile quote:
 #Bio:
