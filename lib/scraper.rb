@@ -36,7 +36,7 @@ class Scraper
     profile = Nokogiri::HTML(html)
 
     #social
-    
+
   end
 
 end
