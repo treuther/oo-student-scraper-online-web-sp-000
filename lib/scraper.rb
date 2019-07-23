@@ -48,4 +48,5 @@ end
 #index.css("a").attribute("href").value
 #'.fixtures/student-site/'
 
+#Social container: profile.css(".social-icon-container").first
 #
